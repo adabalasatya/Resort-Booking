@@ -27,7 +27,7 @@ const DynamicProduct = () => {
 
     const dynamicProductHandler = async()=>{
         
-        const response = await fetch(`https://resort-booking-hazel.vercel.app/api/admin/product/${id}`)
+        const response = await fetch(`https://resort-booking-three.vercel.app/api/admin/product/${id}`)
         const newData = await response.json()
 
         console.log("dynaic data:", newData)

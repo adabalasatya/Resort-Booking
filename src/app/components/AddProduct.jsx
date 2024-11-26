@@ -28,7 +28,7 @@ const AddProduct = () => {
           data.append('image', image);
       
           try {
-              const response = await fetch(`https://resort-booking-hazel.vercel.app/api/admin/add-product`,{
+              const response = await fetch(`https://resort-booking-three.vercel.app/api/admin/add-product`,{
                 method:'POST',
                 body:data
               })   
