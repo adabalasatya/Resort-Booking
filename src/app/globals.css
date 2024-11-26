@@ -1,0 +1,896 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+  --primary-color: rgb(3, 107, 90);
+  --secondary-color: rgb(68, 68, 163);
+  --background-light: rgba(133, 121, 121, 0.363);
+  --text-color-light: white;
+  --text-color-dark: rgb(49, 43, 43);
+  --highlight-color: gold;
+  --error-color: red;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color-dark);
+  line-height: 1.6;
+}
+
+/* Utilities */
+.rounded {
+  border-radius: 8px;
+}
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.padding-md {
+  padding: 20px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Main Body Styling */
+.loginBody {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6); /* Fallback for Image Overlay */
+}
+
+.backgroundImage {
+  position: absolute;
+  z-index: -1;
+}
+
+.loginWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 70%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+/* Left Section */
+.infoSection {
+  flex: 1;
+  color: white;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.infoSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.infoSection p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Right Section - Form */
+.formContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formSection {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.formSection h1 {
+  margin-bottom: 20px;
+}
+
+.formSection input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.formSection input:focus {
+  outline: none;
+  border: 1px solid white;
+}
+
+.formSection button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: black;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formSection button:hover {
+  background: lightgray;
+}
+
+.authLink {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: yellow;
+  text-decoration: none;
+}
+
+.authLink:hover {
+  text-decoration: underline;
+}
+
+/* Register Section */
+
+.registerBody {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6); /* Fallback for Image Overlay */
+}
+
+.backgroundImage {
+  position: absolute;
+  z-index: -1;
+}
+
+.registerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 70%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+/* Left Section */
+.infoSection {
+  flex: 1;
+  color: white;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.infoSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.infoSection p {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+
+/* Hero Section */
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Glass Navigation */
+.navSection {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); 
+  border-radius: 0 0 10px 10px;
+}
+
+
+.navSection .link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navSection .link h2{
+  color: black;
+}
+
+.navSection .link:hover {
+  color: yellow;
+}
+
+.logout {
+ 
+  background-color: red;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Hero Content */
+.heroContent {
+  position: relative;
+  text-align: right;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  margin-left: 520px;
+  margin-top: 100px; 
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.heroContent h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  color: whitesmoke;
+  margin: 20px 0;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.ctaButton {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: orange;
+}
+
+
+
+/* Navbar  */
+
+.adminnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1a202c; /* Dark gray for navbar */
+  color: white;
+  border-bottom: 2px solid #2d3748; /* Slightly darker border */
+}
+
+.welcomeMessage {
+  flex: 1; 
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.734);
+}
+
+/* Navigation Links (Contact and Logout) */
+.navLinks {
+  display: flex;
+  align-items: left;
+  margin-left: 30px;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.link h2:hover {
+  color:yellow;
+}
+
+.contactIcons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #00acee; 
+}
+
+.logout {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 8px 12px;
+ 
+}
+
+.logout:hover {
+  background-color: darkred;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+/* Room Section */
+
+.productSection {
+  position: relative;
+  padding: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+.shelfArrows {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.arrowBtn {
+  background-color: #4fa94d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.arrowBtn:hover {
+  transform: scale(1.2);
+}
+
+.shelfCard {
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.shelfCard:hover {
+  transform: translateY(-10px);
+}
+
+.cardTop {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 15px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardPrice {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.cardAmenities {
+  margin-bottom: 15px;
+}
+
+.amenityItem {
+  display: block;
+  font-size: 14px;
+  color: #777;
+}
+
+.detailBtn {
+  background-color: #4fa94d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.detailBtn:hover {
+  background-color: #24cd22;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+
+
+/* Details */
+
+/* Main container for the product details */
+.singleSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section - Image and Title */
+.singleLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.singleLeft h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.singleImage {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Center Section - Details, Price, Description, and Amenities */
+.singleCenter {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.singlePrice {
+  font-size: 22px;
+  font-weight: bold;
+  color: #4fa94d;
+  margin-bottom: 10px;
+}
+
+.singleDesc {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.singleAmen {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.singleAmen span {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #4fa94d;
+}
+
+/* Offer Section */
+.offer {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.offer button {
+  background-color: #ffce00;
+  color: #333;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.offer button:hover {
+  background-color: #ffc400;
+}
+
+/* Book Now Button */
+.singleBtn {
+  margin-top: 20px;
+}
+
+.singleBtn button {
+  background-color: #4fa94d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.singleBtn button:hover {
+  background-color: #3e7e3d;
+}
+
+/* Go Back Link */
+p {
+  text-align: center;
+  font-size: 16px;
+  color: #4fa94d;
+  margin-top: 20px;
+}
+
+p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/* Main container for the calendar section */
+.calenderSection {
+  position: relative; /* Ensures positioning context for z-index */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Current date display */
+.currentDate {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.currentDate:hover {
+  background-color: #4fa94d;
+  color: #fff;
+  border-color: #4fa94d;
+}
+
+/* Highlight for selected dates */
+.currentDate div {
+  font-size: 14px;
+  color: red;
+  font-weight: bold;
+}
+
+/* DateRange calendar styling */
+.dateRange {
+  position: absolute; /* Position relative to calenderSection */
+  top: 60px; /* Adjust the value based on the layout */
+  z-index: 1000; /* Higher than the nav card */
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Calendar button styling */
+.calenderButton {
+  margin-top: 15px;
+  background-color: #4fa94d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.calenderButton:hover {
+  background-color: #3e7e3d;
+  transform: scale(1.05);
+}
+
+ /* invoice */
+  
+ .invoice-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-container h1 {
+  font-size: 24px;
+  color: #343a40;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.booking-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.booking-item h3 {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.booking-item p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #495057;
+}
+
+.booking-item h4 {
+  font-size: 18px;
+  color: #28a745;
+  margin-top: 10px;
+}
+
+.no-bookings {
+  text-align: center;
+  font-size: 18px;
+  color: #dc3545;
+  margin-top: 20px;
+}
+.deleteBtn{
+  padding:5px 15px;
+  margin-top:5px;
+  background:red;
+  color:white;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 580px) {
+  .formSection {
+    border: 2px solid white;
+    width: 80%;
+  }
+
+  .navSection {
+    font-size: x-small;
+  }
+
+  .title {
+    font-size: x-small;
+  }
+
+  .productSection {
+    height: fit-content;
+  }
+
+  .proDetail {
+    display: block;
+  }
+
+  .roomImage {
+    width: 265px;
+    margin-top: -10px;
+  }
+
+  .singleSection {
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .singleImage {
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
+
+
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 22%;
+  margin: 15px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section form {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.email-input {
+  padding: 10px;
+  width: calc(100% - 90px);
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.subscribe-button:hover {
+  background-color: #c0392b;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #ecf0f1;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #e74c3c;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #34495e;
+  padding-top: 10px;
+  font-size: 0.8rem;
+}
