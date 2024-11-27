@@ -168,7 +168,7 @@ body {
 @media (max-width: 1024px) { /* Tablet Screens */
   .loginWrapper, .registerWrapper {
     flex-direction: column; /* Stack content vertically */
-    width: 90%;
+    width: auto;
     height: auto; /* Allow dynamic height */
   }
 
@@ -231,7 +231,6 @@ body {
 
   .formSection {
     padding: 15px;
-    width: 100px;
     max-width: 400px;
   }
 
