@@ -198,12 +198,13 @@ body {
   }
 
   .infoSection p {
-   display: none;
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 
   .formSection {
     padding: 20px;
-    max-width: 400px;
+    max-width: 320px;
   }
 
   .formSection h1 {
@@ -230,6 +231,7 @@ body {
 
   .formSection {
     padding: 15px;
+    width: 100px;
     max-width: 400px;
   }
 
