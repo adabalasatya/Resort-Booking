@@ -343,6 +343,64 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* General Hero Section Styling */
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Glass Navigation */
+.navSection {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 10px 10px;
+}
+
+.navSection .link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navSection .link h2 {
+  color: black;
+}
+
+.navSection .link:hover {
+  color: yellow;
+}
+
+.logout {
+  background-color: red;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
 /* Hero Content */
 .heroContent {
   position: relative;
@@ -469,7 +527,7 @@ body {
   }
 
   .navSection {
-    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 10px;
   }
@@ -503,7 +561,6 @@ body {
   }
 
   .navSection {
-    display: flex;
     padding: 5px;
   }
 
@@ -517,6 +574,7 @@ body {
     text-align: center;
   }
 }
+
 
 
 
