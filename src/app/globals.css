@@ -1071,6 +1071,10 @@ p:hover {
     display: none;
   }
 
+  .navLinks .icon{
+    display: none;
+  }
+
   .title {
     font-size: x-small;
   }
