@@ -903,8 +903,8 @@ p:hover {
   .loginWrapper,
   .registerWrapper {
     flex-direction: column;
-    width: 90%;
-    height: auto;
+    width: 100px;
+    height: 100px;
     padding: 15px;
   }
 
