@@ -469,7 +469,7 @@ body {
   }
 
   .navSection {
-    flex-direction: column;
+    display: flex;
     align-items: center;
     padding: 10px;
   }
