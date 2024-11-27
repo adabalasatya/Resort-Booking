@@ -801,18 +801,22 @@ body {
 }
 
 .singleBtn button {
-  background-color: #4fa94d;
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #007bff;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .singleBtn button:hover {
-  background-color: #3e7e3d;
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 /* Go Back Link */
@@ -828,6 +832,19 @@ p:hover {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .goBackButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .goBackButton {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+}
 
 /* Calendar Section */
 .calenderSection {
