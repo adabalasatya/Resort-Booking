@@ -216,6 +216,12 @@ body {
     padding: 15px;
   }
 
+  .loginBody {
+  
+    width: 100px;
+    
+  }
+
   .infoSection {
     margin-right: 0;
     margin-bottom: 20px; /* Add spacing between sections */
