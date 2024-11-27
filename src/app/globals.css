@@ -901,12 +901,11 @@ p:hover {
   transform: scale(1.05);
 }
 
- /* invoice */
-  
- .invoice-container {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 20px;
+ /* Invoice Container */
+.invoice-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
   background-color: #f8f9fa;
   border-radius: 8px;
@@ -914,12 +913,13 @@ p:hover {
 }
 
 .invoice-container h1 {
-  font-size: 24px;
+  font-size: 1.8rem;
   color: #343a40;
   margin-bottom: 20px;
   text-align: center;
 }
 
+/* Booking Items */
 .booking-item {
   margin-bottom: 20px;
   padding: 15px;
@@ -930,34 +930,111 @@ p:hover {
 }
 
 .booking-item h3 {
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #007bff;
   margin-bottom: 10px;
 }
 
 .booking-item p {
   margin: 5px 0;
-  font-size: 16px;
+  font-size: 1rem;
   color: #495057;
 }
 
 .booking-item h4 {
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #28a745;
   margin-top: 10px;
 }
 
+/* No Bookings Message */
 .no-bookings {
   text-align: center;
-  font-size: 18px;
+  font-size: 1rem;
   color: #dc3545;
   margin-top: 40px;
 }
-.deleteBtn{
-  padding:5px 15px;
-  margin-top:5px;
-  background:red;
-  color:white;
+
+/* Delete Button */
+.deleteBtn {
+  padding: 5px 15px;
+  margin-top: 5px;
+  background: red;
+  color: white;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .invoice-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .invoice-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .booking-item {
+    padding: 10px;
+  }
+
+  .booking-item h3 {
+    font-size: 1rem;
+  }
+
+  .booking-item p {
+    font-size: 0.9rem;
+  }
+
+  .booking-item h4 {
+    font-size: 1rem;
+  }
+
+  .deleteBtn {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .invoice-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .invoice-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .booking-item {
+    padding: 8px;
+  }
+
+  .booking-item h3 {
+    font-size: 0.9rem;
+  }
+
+  .booking-item p {
+    font-size: 0.8rem;
+  }
+
+  .booking-item h4 {
+    font-size: 0.9rem;
+  }
+
+  .deleteBtn {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
 }
 
 
