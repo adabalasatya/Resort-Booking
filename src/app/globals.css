@@ -909,7 +909,7 @@ p:hover {
 
   .infoSection {
     margin-right: 0;
-    margin-bottom: 20px; /* Add spacing between sections */
+    margin-bottom: 10px; /* Add spacing between sections */
     text-align: center; /* Center align text for smaller screens */
   }
 
