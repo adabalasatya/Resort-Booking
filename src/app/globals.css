@@ -1062,15 +1062,13 @@ p:hover {
 
 /* Media Queries */
 @media (max-width: 580px) {
+
   .formSection {
     border: 2px solid white;
     width: 80%;
   }
 
-  .navSection {
-    display: none;
-  }
-
+  
   .navLinks .icon{
     display: none;
   }
