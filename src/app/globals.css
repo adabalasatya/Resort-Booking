@@ -902,13 +902,11 @@ p:hover {
   .loginWrapper
   .registerWrapper {
     flex-direction: column;
-    overflow: hidden;
     width: 90%;
     height: auto;
     padding: 15px;
   }
   
-
   .infoSection {
     margin-right: 0;
     margin-bottom: 20px; /* Add spacing between sections */
@@ -925,7 +923,7 @@ p:hover {
 
   .formSection {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     padding: 30px;
   }
 
@@ -956,7 +954,7 @@ p:hover {
 
   .formSection {
     padding: 20px;
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .formSection h1 {
