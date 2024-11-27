@@ -504,6 +504,7 @@ body {
   }
 
   .navSection {
+    display: flex;
     padding: 5px;
   }
 
@@ -893,7 +894,7 @@ p:hover {
   text-align: center;
   font-size: 18px;
   color: #dc3545;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .deleteBtn{
   padding:5px 15px;
