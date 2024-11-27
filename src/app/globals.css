@@ -974,6 +974,11 @@ p:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+  .welcomeMessage{
+    display: none;
+  }
+
   .invoice-container {
     width: 95%;
     padding: 15px;
@@ -1011,6 +1016,11 @@ p:hover {
 }
 
 @media (max-width: 480px) {
+
+  .welcomeMessage{
+    display: none;
+  }
+  
   .invoice-container {
     width: 100%;
     padding: 10px;
