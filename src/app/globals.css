@@ -903,7 +903,7 @@ p:hover {
   .registerWrapper {
     flex-direction: column;
     width: 90%;
-    height: 90%;
+    height: 60%;
     padding: 15px;
   }
 
