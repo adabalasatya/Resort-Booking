@@ -904,12 +904,12 @@ p:hover {
     flex-direction: column;
     width: 90%;
     height: auto;
-    padding: 25px;
+    padding: 15px;
   }
 
   .infoSection {
     margin-right: 0;
-    margin-bottom: 10px; /* Add spacing between sections */
+    margin-bottom: 20px; /* Add spacing between sections */
     text-align: center; /* Center align text for smaller screens */
   }
 
@@ -984,3 +984,4 @@ p:hover {
     display: none;
   }
 }
+
