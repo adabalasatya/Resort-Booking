@@ -188,7 +188,7 @@ body {
 
   .formSection {
     padding: 30px;
-    max-width: 450px; /* Reduce max width */
+    max-width: 350px; /* Reduce max width */
   }
 }
 
@@ -226,12 +226,12 @@ body {
   }
 
   .infoSection p {
-    font-size: 0.8rem;
+    display: none;
   }
 
   .formSection {
     padding: 15px;
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .formSection h1 {
