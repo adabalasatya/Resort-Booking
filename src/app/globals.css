@@ -896,16 +896,16 @@ p:hover {
 }
 
 /* Responsive Styling */
-
 /* For tablets (screen width 768px and below) */
+
 @media (max-width: 768px) {
-  .loginWrapper
+  .loginWrapper,
   .registerWrapper {
     flex-direction: column;
     overflow: hidden;
     width: 90%;
     height: auto;
-    padding: 15px;
+    padding: 20px;
   }
 
   .infoSection {
@@ -915,7 +915,7 @@ p:hover {
   }
 
   .infoSection h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .infoSection p {
@@ -924,8 +924,39 @@ p:hover {
 
   .formSection {
     width: 100%;
-    max-width: 350px;
-    padding: 30px;
+    max-width: 400px; /* Increased size */
+    padding: 40px; /* Add more padding */
+  }
+
+  .formSection h1 {
+    font-size: 1.7rem;
+  }
+
+  .formSection input {
+    font-size: 1rem;
+    padding: 12px; /* Increased padding */
+  }
+
+  .formSection button {
+    font-size: 1rem;
+    padding: 12px; /* Increased padding */
+  }
+}
+
+/* For mobile (screen width 480px and below) */
+@media (max-width: 480px) {
+  .infoSection h1 {
+    font-size: 2rem;
+  }
+
+  .infoSection p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .formSection {
+    padding: 30px; /* Add more padding */
+    max-width: 350px; /* Increased size */
   }
 
   .formSection h1 {
@@ -934,49 +965,17 @@ p:hover {
 
   .formSection input {
     font-size: 0.9rem;
+    padding: 10px; /* Increased padding */
   }
 
   .formSection button {
     font-size: 0.9rem;
-  }
-}
-
-/* For mobile (screen width 480px and below) */
-@media (max-width: 480px) {
-
-  .infoSection h1 {
-    font-size: 1.8rem;
-  }
-
-  .infoSection p {
-    font-size: 0.9rem;
-    line-height: 1.3;
-  }
-
-  .formSection {
-    padding: 20px;
-    max-width: 300px;
-  }
-
-  .formSection h1 {
-    font-size: 1.3rem;
-  }
-
-  .formSection input {
-    font-size: 0.8rem;
-    padding: 8px;
-  }
-
-  .formSection button {
-    font-size: 0.8rem;
-    padding: 8px;
+    padding: 10px; /* Increased padding */
   }
 
   /* Reduce spacing for the authLink */
   .authLink {
-    margin-top: 10px;
-    font-size: 0.8rem;
+    margin-top: 15px;
+    font-size: 0.85rem;
   }
 }
-
-
