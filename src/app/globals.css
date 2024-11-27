@@ -999,6 +999,10 @@ p:hover {
     font-size: 1rem;
   }
 
+  .no-bookings{
+    margin-top: 80px;
+  }
+
   .deleteBtn {
     padding: 5px 10px;
     font-size: 0.8rem;
@@ -1030,6 +1034,11 @@ p:hover {
   .booking-item h4 {
     font-size: 0.9rem;
   }
+
+  .no-bookings{
+    margin-top: 80px;
+  }
+
 
   .deleteBtn {
     padding: 4px 8px;
