@@ -902,7 +902,7 @@ p:hover {
 @media (max-width: 768px) {
   .loginWrapper,
   .registerWrapper {
-    margin-bottom: 20px;
+    margin-top: 20px;
     flex-direction: column;
     width: 100px;
     height: 100px;
