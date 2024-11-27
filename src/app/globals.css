@@ -222,6 +222,12 @@ body {
     
   }
 
+  .registerBody {
+   
+    position: fixed;
+    
+  }
+
   .infoSection {
     margin-right: 0;
     margin-bottom: 20px; /* Add spacing between sections */
