@@ -918,8 +918,7 @@ p:hover {
   }
 
   .infoSection p {
-    font-size: 1rem;
-    line-height: 1.4;
+    display: none;
   }
 
   .formSection {
@@ -978,10 +977,4 @@ p:hover {
   }
 }
 
-/* Hide the <p> tag in mobile and tablet screens */
-@media (max-width: 768px) {
-  .infoSection p {
-    display: none;
-  }
-}
 
