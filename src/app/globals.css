@@ -43,6 +43,7 @@ body {
 }
 
 /* Main Body Styling */
+
 .loginBody {
   height: 100vh;
   display: flex;
@@ -211,21 +212,14 @@ body {
   .loginWrapper,
   .registerWrapper {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
+    max-width: 400px; 
     height: auto;
     padding: 15px;
   }
 
-  .loginBody {
-  
-   padding-bottom: 10px;
-    
-  }
-
-  .registerBody {
-   
-    position: fixed;
-    
+  .loginBody, .registerBody {
+    padding: 10px; /* Reduce padding */
   }
 
   .infoSection {
@@ -264,6 +258,15 @@ body {
 
 /* For mobile (screen width 480px and below) */
 @media (max-width: 480px) {
+
+  .loginBody, .registerBody {
+    padding: 5px; /* Minimize padding further for small screens */
+  }
+
+  .loginWrapper, .registerWrapper {
+    max-width: 350px; /* Further reduce the max width */
+  }
+  
   .infoSection h1 {
     font-size: 1.8rem;
   }
