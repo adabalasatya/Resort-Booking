@@ -903,7 +903,7 @@ p:hover {
   .registerWrapper {
     flex-direction: column;
     width: 90%;
-    height: auto;
+    height: 90%;
     padding: 15px;
   }
 
@@ -942,10 +942,6 @@ p:hover {
 
 /* For mobile (screen width 480px and below) */
 @media (max-width: 480px) {
-
-  .registerWrapper{
-         padding-bottom: 20px;
-  }
 
   .infoSection h1 {
     font-size: 1.8rem;
