@@ -1068,7 +1068,7 @@ p:hover {
   }
 
   .navSection {
-    font-size: x-small;
+    display: none;
   }
 
   .title {
@@ -1102,6 +1102,7 @@ p:hover {
   
 }
 
+/* Footer Section */
 
 .footer {
   background-color: #2c3e50;
