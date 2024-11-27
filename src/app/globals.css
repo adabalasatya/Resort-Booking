@@ -42,28 +42,35 @@ body {
   cursor: pointer;
 }
 
-/* Main Body Styling */
 
-.loginBody {
-  height: 100vh;
+/* General Body Styling */
+
+.loginBody, .registerBody {
+  min-height: 100vh; /* Ensure content fills the viewport */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   background-color: rgba(0, 0, 0, 0.6); /* Fallback for Image Overlay */
+  padding: 20px; /* Add padding for smaller screens */
 }
 
 .backgroundImage {
   position: absolute;
   z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.loginWrapper {
+/* Wrapper Styling */
+.loginWrapper, .registerWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for small screens */
   width: 80%;
-  height: 70%;
+  max-width: 1200px; /* Limit the max width */
   padding: 20px;
   background: rgba(255, 255, 255, 0.1); /* Slight transparency */
   border-radius: 20px;
@@ -71,12 +78,13 @@ body {
   backdrop-filter: blur(10px); /* Frosted glass effect */
 }
 
-/* Left Section */
+/* Left Section - Info */
 .infoSection {
   flex: 1;
   color: white;
   padding: 20px;
   margin-right: 20px;
+  text-align: left; /* Default alignment for larger screens */
 }
 
 .infoSection h1 {
@@ -156,76 +164,18 @@ body {
   text-decoration: underline;
 }
 
-/* Register Section */
-
-.registerBody {
-  height: 120vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.6); /* Fallback for Image Overlay */
-}
-
-.backgroundImage {
-  position: absolute;
-  z-index: -1;
-}
-
-.registerWrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  height: 70%;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1); /* Slight transparency */
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px); /* Frosted glass effect */
-}
-
-/* Left Section */
-.infoSection {
-  flex: 1;
-  color: white;
-  padding: 20px;
-  margin-right: 20px;
-}
-
-.infoSection h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.infoSection p {
-  color: white;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-
-/* Responsive Styling */
-
-/* For tablets (screen width 768px and below) */
-@media (max-width: 768px) {
-  .loginWrapper,
-  .registerWrapper {
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px; 
-    height: auto;
-    padding: 15px;
-  }
-
-  .loginBody, .registerBody {
-    padding: 10px; /* Reduce padding */
+/* Responsive Design */
+@media (max-width: 1024px) { /* Tablet Screens */
+  .loginWrapper, .registerWrapper {
+    flex-direction: column; /* Stack content vertically */
+    width: 90%;
+    height: auto; /* Allow dynamic height */
   }
 
   .infoSection {
-    margin-right: 0;
-    margin-bottom: 20px; /* Add spacing between sections */
-    text-align: center; /* Center align text for smaller screens */
+    margin-right: 0; /* Remove spacing between sections */
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Add spacing below */
   }
 
   .infoSection h1 {
@@ -234,55 +184,58 @@ body {
 
   .infoSection p {
     font-size: 1rem;
-    line-height: 1.4;
   }
 
   .formSection {
-    width: 100%;
-    max-width: 350px;
     padding: 30px;
-  }
-
-  .formSection h1 {
-    font-size: 1.5rem;
-  }
-
-  .formSection input {
-    font-size: 0.9rem;
-  }
-
-  .formSection button {
-    font-size: 0.9rem;
+    max-width: 350px; /* Reduce max width */
   }
 }
 
-/* For mobile (screen width 480px and below) */
-@media (max-width: 480px) {
-
-  .loginBody, .registerBody {
-    padding: 5px; /* Minimize padding further for small screens */
-  }
-
-  .loginWrapper, .registerWrapper {
-    max-width: 350px; /* Further reduce the max width */
-  }
-  
+@media (max-width: 768px) { /* Small Tablets */
   .infoSection h1 {
     font-size: 1.8rem;
   }
 
   .infoSection p {
     font-size: 0.9rem;
-    line-height: 1.3;
+    line-height: 1.4;
   }
 
   .formSection {
     padding: 20px;
+    max-width: 320px;
+  }
+
+  .formSection h1 {
+    font-size: 1.5rem;
+  }
+
+  .formSection input, .formSection button {
+    font-size: 0.9rem;
+  }
+
+  .authLink {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) { /* Mobile Screens */
+  .infoSection h1 {
+    font-size: 1.5rem;
+  }
+
+  .infoSection p {
+    font-size: 0.8rem;
+  }
+
+  .formSection {
+    padding: 15px;
     max-width: 300px;
   }
 
   .formSection h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .formSection input {
@@ -295,19 +248,12 @@ body {
     padding: 8px;
   }
 
-  /* Reduce spacing for the authLink */
   .authLink {
     margin-top: 10px;
     font-size: 0.8rem;
   }
 }
 
-/* Hide the <p> tag in mobile and tablet screens */
-@media (max-width: 768px) {
-  .infoSection p {
-    display: none;
-  }
-}
 
 
 
