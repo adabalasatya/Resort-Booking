@@ -222,6 +222,9 @@ body {
 
 @media (max-width: 480px) { /* Mobile Screens */
 
+  /* Mobile Screens (Login Form Adjustments) */
+
+  /* Target only the login form */
   .loginBody .formSection {
     padding: 20px;
     max-width: 350px; /* Slightly wider form */
@@ -245,7 +248,7 @@ body {
     font-size: 0.9rem; /* Keep link size consistent with form size */
     margin-top: 15px; /* Add more spacing above the link */
   }
-}
+
 
   .infoSection h1 {
     font-size: 1.5rem;
