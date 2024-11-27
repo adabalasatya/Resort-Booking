@@ -899,17 +899,10 @@ p:hover {
 
 /* For tablets (screen width 768px and below) */
 @media (max-width: 768px) {
-
-  .loginWrapper{
-    flex-direction: column;
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-    padding: 25px;
-
-  }
+  .loginWrapper
   .registerWrapper {
     flex-direction: column;
+    overflow: hidden;
     width: 90%;
     height: auto;
     padding: 15px;
