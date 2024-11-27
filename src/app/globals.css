@@ -797,26 +797,22 @@ body {
 
 /* Book Now Button */
 .singleBtn {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .singleBtn button {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #007bff;
+  background-color: #4fa94d;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  text-align: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 .singleBtn button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+  background-color: #3e7e3d;
 }
 
 /* Go Back Link */
@@ -832,21 +828,8 @@ p:hover {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .goBackButton {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-}
 
-@media (max-width: 480px) {
-  .goBackButton {
-    font-size: 13px;
-    padding: 6px 14px;
-  }
-}
-
-/* Calendar Section */
+/* Main container for the calendar section */
 .calenderSection {
   position: relative; /* Ensures positioning context for z-index */
   display: flex;
@@ -857,12 +840,12 @@ p:hover {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 10px;
-  max-width: 90%;
+  max-width: 400px;
   margin: 0 auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Current Date Display */
+/* Current date display */
 .currentDate {
   font-size: 16px;
   font-weight: bold;
@@ -882,26 +865,25 @@ p:hover {
   border-color: #4fa94d;
 }
 
+/* Highlight for selected dates */
 .currentDate div {
   font-size: 14px;
   color: red;
   font-weight: bold;
 }
 
-/* DateRange Calendar Styling */
+/* DateRange calendar styling */
 .dateRange {
   position: absolute; /* Position relative to calenderSection */
-  top: 60px; /* Adjusted value for alignment */
-  z-index: 1000; /* Higher than other UI elements */
+  top: 60px; /* Adjust the value based on the layout */
+  z-index: 1000; /* Higher than the nav card */
   background: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  width: 100%;
-  max-width: 350px; /* Constrained for smaller screens */
 }
 
-/* Calendar Button Styling */
+/* Calendar button styling */
 .calenderButton {
   margin-top: 15px;
   background-color: #4fa94d;
@@ -918,53 +900,6 @@ p:hover {
   background-color: #3e7e3d;
   transform: scale(1.05);
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .calenderSection {
-    max-width: 95%;
-    padding: 15px;
-  }
-
-  .currentDate {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-
-  .calenderButton {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  .dateRange {
-    top: 50px; /* Adjust position for smaller screens */
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  .calenderSection {
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .currentDate {
-    font-size: 13px;
-    padding: 6px 10px;
-  }
-
-  .calenderButton {
-    padding: 6px 14px;
-    font-size: 13px;
-  }
-
-  .dateRange {
-    top: 45px;
-    max-width: 250px;
-  }
-}
-
-
 
  /* Invoice Container */
 .invoice-container {
@@ -1082,6 +1017,8 @@ p:hover {
 
 @media (max-width: 480px) {
 
+ 
+  
   .invoice-container {
     width: 100%;
     padding: 10px;
