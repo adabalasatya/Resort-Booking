@@ -908,6 +908,10 @@ p:hover {
     padding: 15px;
   }
 
+  .formContainer{
+   padding-bottom: 10px;
+  }
+
   .infoSection {
     margin-right: 0;
     margin-bottom: 20px; /* Add spacing between sections */
