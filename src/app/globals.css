@@ -227,7 +227,7 @@ body {
   /* Target only the login form */
   .loginBody .formSection {
     padding: 20px;
-    max-width: 550px; /* Slightly wider form */
+    max-width: 350px; /* Slightly wider form */
   }
 
   .loginBody .formSection h1 {
